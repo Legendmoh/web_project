@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_form.css">
+    <style>
+        body {
+            background-color: #ededed;
+            margin: 0; 
+            padding-bottom: 50px; 
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        section form {
+            width: 60%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: solid 4px #2c3e50;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #2c3e50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #1e2b35;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>4D Production</h1>
+        </div>
+    </header>
+    <section>
+<!--adding form-->
+        <form>
+            <fieldset>
+                <legend>Shooting details</legend>
+                <label for="vicat">Video category:</label>
+                <select name="vicat" id="vicat">
+                    <option value="X">Choose the category</option>
+                    <option value="C">Comedy</option>
+                    <option value="M">Music</option>
+                    <option value="CO">Commercial</option>
+                    <option value="F">Film</option>
+                    <option value="G">Gaming</option>
+                    <option value="E">Events</option>
+                </select>
+                <br><br>
+                <label for="vidur">Video duration and price:</label>
+                <select name="vidur" id="vidur">
+                    <option value="t">Choose the duration</option>
+                    <option value="s1">15-25 sec/35 OMR</option>
+                    <option value="s2">25-35 sec/45 OMR</option>
+                    <option value="s3">35-45 sec/55 OMR</option>
+                    <option value="s5">45-59 sec/65 OMR</option>
+                    <option value="m1">1-2 min/80 OMR</option>
+                    <option value="m2">2-3 min/120 OMR</option>
+                    <option value="m3">3-4 min/155 OMR</option>
+                </select>
+                <br>
+                <a href="java project.html">More information</a>
+            </fieldset>
+            <fieldset>
+                <legend>Client details</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" placeholder="fullname,30char" maxlength="30" required>
+                <br><br>
+                <label for="idnumber">ID number:</label>
+                <input type="text" id="idnumber" placeholder="ID,9char" maxlength="9" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="C-Email,20char" maxlength="20" required>
+                <br><br>
+                <label for="duration">Duration:</label>
+                <input type="number" id="duration" placeholder="Duration" required>
+                <br><br>
+                <label for="cloc">Locations:</label>
+                <select name="cloc" id="cloc">
+                    <option value="l">Choose the location</option>
+                    <option value="p1">MUSCAT</option>
+                    <option value="p2">NIZWA</option>
+                    <option value="p3">SALALAH</option>
+                </select>
+                <br><br>
+                <label for="another_location">Another location:</label>
+                <input type="text" id="another_location" placeholder="+35 outside Muscat" maxlength="15">
+                <br><br>
+                <label for="idea">Client idea:</label>
+                <textarea id="idea" rows="6" placeholder="Tell us your idea" required></textarea>
+                <br><br>
+                <input type="submit" value="Save">
+                <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+    <fieldset>
+    <section>
+        <ol>
+            <li><b>Who need us?</b></li>
+            <ul>
+                <li>Combanies</li>
+                <li>Coffee shops</li>
+            </ul>
+            <li><b>for what?</b></li>
+            <ul>
+                <li>Creating Reels</li>
+                <li>Manage instagram account</li>
+                <li>Creating commercial videos</li>
+            </ul>
+        </ol>
+    </section>
+</fieldset>
+    <section>
+        <div>
+          <a href="main.html"><img class='home_image' style="height: 55px; width: 60px;" src="home.png"></a>
+        </div>
+      </section>
+<!--made by Abdulla and Mohammed-->
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Company Price Table</title>
+<!--internal style-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ededed;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Production Company Price Table for other companies</h2>
+<!-- adding table-->
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Service</th>
+                <th colspan="3">Video Duration</th>
+            </tr>
+            <tr>
+                <th>Short (0-2 mins)</th>
+                <th>Medium (2-5 mins)</th>
+                <th>Long (5+ mins)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Video Production</td>
+                <td>500 OMR</td>
+                <td>1000 OMR</td>
+                <td>1500 OMR</td>
+            </tr>
+            <tr>
+                <td colspan="3">Includes scriptwriting, filming, editing, and post-production</td>
+            </tr>
+            <tr>
+                <td colspan="3">Additional charges may apply for special effects and animation</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Photography</td>
+                <td>200 OMR per hour</td>
+                <td>350 OMR per hour</td>
+                <td>500 OMR per hour</td>
+            </tr>
+            <tr>
+                <td colspan="3">Includes photo shoot, editing, and delivery of high-resolution images</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

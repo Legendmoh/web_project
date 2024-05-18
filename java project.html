@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body{background-color:#ededed;}
+p{color:red; font-size:20px; font-style:italic;}
+h1{color:blue;}
+</style>
+</head>
+
+<body>
+<p>Note: if the price more than 60 OMR we will add a vat</p>
+<p>Note: 35 rials will be added if the shooting location outside muscat</p>
+<!--java script-->
+<script>
+alert('This page is to help you calculate the price for your work')
+
+var vat, price, res, res1 ; 
+ vat=5/100;
+ price=prompt('enter the price for the video:');
+ res= parseInt(price) * vat;
+ res1= parseInt(price) + parseInt(res);
+ 
+if (price>=60)
+document.write("<br> there is a vat will be added."+" the price will be = "+res1);
+else
+document.write("<br> there is no vat and the price is = "+price);
+
+
+
+
+
+
+
+
+</script>
+<!--made by Abdulla and Mohammed-->
+</body>
+</html>
